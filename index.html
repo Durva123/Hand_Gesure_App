@@ -1,0 +1,68 @@
+ 
+<html>
+    <head>
+      <title>Hand Gesture App</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+      <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+  
+      <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+  
+    <body>
+    <div class="container">
+    
+      <center>
+      <h1 class="btn btn-success heading">Hand Gesture App
+        <br>
+        <span>&#128078</span><!--thumbs down-->
+        <span>&#128077</span><!--thumbs up-->
+        <span>&#9996</span><!--victory-->
+        <span>&#128076</span><!--nice-->
+        <span>&#128079</span><!--claps-->
+        <br>
+      </h1>
+  
+        <h4 style="font-size: 22px;">Take a selfie of a gesture to know about it's meaning.</h4>
+        <p>The model is trained on Victory-Thumbs Up-Nice</p><br>
+      
+        <div class="col-md-4 col-sm-12 col-xs-12" width="300" height="300">
+        <label>WEBCAM: </label>
+        <div id="camera"></div>
+        <br><br>
+        <button class="btn btn-success" onclick="snapshot()">Click Picture </button></div>
+        
+        <div class="col-md-4 col-sm-12 col-xs-12">
+          <label>Prediction 1</label>
+          <p class="emotion_name" id="emotion_name_1"></p>
+          <p class="emoji" id="emoji_1"></p>
+
+          <label>Prediction 2</label>
+          <p class="emotion_name" id="emotion_name_2"></p>
+          <p class="emoji" id="emoji_2"></p>
+          </div>
+        
+  
+        <div class="col-md-4 col-sm-12 col-xs-12">
+            <label>SNAPSHOT - </label>
+          <div id="picture"></div>
+          <br><br>
+          <button class="btn btn-success" onclick="check()">Check Hand Gesture</button></div>
+          <br><br>
+  
+        </div>
+  
+      </center>
+  
+    </div>
+  
+  <script src="main.js"></script>
+  
+    </body>
+  </html>
+  
+   

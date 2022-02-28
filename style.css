@@ -1,0 +1,30 @@
+body
+{
+  color: rgb(79, 233, 143);
+  background: #000000;
+}
+span
+{
+  font-size: 30px;
+}
+#camera , #picture
+{
+  border: 2px dashed rgb(79, 233, 143);
+  width: 300px;
+  height: 300px; 
+}
+#emotion_name_1 ,#emotion_name_2  
+{
+  color: rgb(79, 233, 143);
+}
+.emotion_name
+{
+  font-size: 40px;
+}
+.emoji
+{
+  font-size:48px;
+}
+.heading{
+  font-size:50px;
+}
